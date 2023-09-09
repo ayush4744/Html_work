@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK-7</title>
+    <style>
+        /* Styles for the horizontal navigation bar */
+        .horizontal-nav {
+            list-style-type: none;
+            margin: 10;
+            padding: 2px;
+            background-color: lightgray; /* Grey background color */
+            border: 1px solid black; /* Black border */
+            width: 300px;
+        }
+
+        .horizontal-nav li {
+            display:inline-table; /* Display links side by side */
+            border-right: 5px solid #bbb;
+            margin-right: 1px;
+
+        }
+
+        .horizontal-nav li:last-child {
+            border-right:none;
+        }
+
+        .horizontal-nav li a {
+            display:block; 
+            color: blue; /* Blue text color */
+            text-align: center;
+            padding: 15px 16px;
+            text-decoration: none;
+        }
+    
+        .horizontal-nav li a:hover:not(.active) {
+            background-color: black;
+        }
+        .horizontal-nav li a:hover {
+            background-color: gray;
+            color: #fff;
+        }
+
+
+        /* Styles for the vertical navigation bar */
+        .vertical-nav {
+            list-style-type: none;
+            margin-left: 20px;
+            padding: 5px;
+            width: 200px;
+            background-color: #93d7e4;
+            float: left;
+            border: 1px solid black;
+        }
+        .vertical-nav li a {
+            display:block;
+            color: blue;
+            font-weight: bold;
+            padding: 8px 16px;
+            text-decoration: none;
+
+        }
+
+        /* Change the link color on hover */
+        .vertical-nav li a:hover {
+            background-color: #e29819;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Horizontal Navigation Bar</h1>
+    <!-- Horizontal Navigation -->
+    <ul class="horizontal-nav">
+        <li><a href="./index.html" class="active">Home</a></li>
+        <li><a href="https://www.java.com/en/">Java</a></li>
+        <li><a href="https://www.w3schools.com/html/">HTML</a></li>
+        <li><a href="https://www.w3schools.com/css/default.asp">CSS</a></li>
+    </ul>
+
+    <!-- Add some space between horizontal and vertical navigation -->
+    <div style="clear:both;"></div>
+
+    <h1>Vertical Navigation Bar</h1>
+    <!-- Vertical Navigation -->
+    <ul class="vertical-nav">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="https://www.java.com/">Java</a></li>
+        <li><a href="https://www.w3schools.com/css/">CSS</a></li>
+        <li><a href="https://www.w3schools.com/html/default.asp">HTML</a></li>
+        <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
+    </ul>
+</body>
+</html>
